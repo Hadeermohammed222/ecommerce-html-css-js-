@@ -1,0 +1,497 @@
+*{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --nav-color:rgba(0, 0, 0, 0.229);
+}
+@media(max-width:767px){
+    .container{
+        width:95%;
+        margin:auto;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .container{
+        width:90%;
+        margin:auto;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width:85%;
+        margin:auto;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width:88%;
+        margin:auto;
+    }
+}
+/*********** global ele ********/
+section{
+    padding:80px 0px;
+}
+/*********** global ele ********/
+/******** start header *********/
+.home{
+    position:relative;
+    height:100vh;
+    background-image:url('../images/home-bg5.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:50% 50%;
+}
+.home .overlap{
+    color:white;
+   position:absolute;
+   top:0%;
+   left:0%;
+   right:0%;
+   bottom:0%;
+   width:100%;
+   background-color:rgba(0, 0, 0, 0.278)
+}
+.overlap .container{
+    position:relative;
+    height:100vh;
+}
+.home .overlap h3{
+    font-size:35px;
+}
+.home .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.home span{
+    color:var(--pink);
+}
+.home .fa-arrow-left,
+.home .fa-arrow-right{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:30px;
+}
+.home .fa-arrow-left{
+    left:0%;
+}
+.home .fa-arrow-right{
+    right:0%;
+}
+
+header{
+    padding:10px;
+    background-color:rgba(0, 0, 0, 0.807);
+    position:fixed;
+    z-index: 1000;
+    top:0%;
+    width:100%;
+}
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header .logo img{
+    display:block;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+header ul {
+    display:flex;
+}
+header ul a{
+    display:inline-block;
+    margin-right:20px;
+}
+header .fa-cart-shopping{
+    color:white;
+    font-size:30px;
+    margin-right:10px;
+}
+.logo-left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo-left #cart{
+    position: relative;
+}
+.logo-left .overlap-cart{
+    position: absolute;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    text-align: center;
+    top:-50%;
+    right:-10%;
+    color:white;
+    z-index: 3;
+    font-size:10px;
+    line-height: 20px;
+    background-color: #e83e8c;
+}
+
+header button{
+    padding:10px;
+}
+header button .fa-arrow-right-from-bracket{
+    color:black
+}
+@media(max-width:767px){
+    nav{
+        position: absolute;
+        top:100%;
+        flex-direction: column;
+        background-color:rgba(0, 0, 0, 0.694);
+        width:100%;
+        left:0%;
+        right:0%;
+        padding:20px;
+    }
+    .btn{
+        display:block;
+    }
+    .logo-left button{
+        display: none;
+    }
+    nav ul{
+        display: block;
+        
+    }
+    nav a{
+        margin-bottom: 5px;
+    }
+}
+/******** start header *********/
+/*********** start clothes *****/
+.clothes-women .box
+{
+    border-radius: 10px;
+    text-align: center;
+    margin:10px;
+    box-shadow:1px 2px 2px 3px rgba(128, 128, 128, 0.546);
+    width:calc(90% /5);
+    padding:20px 20px 0px 20px;
+ }
+ .clothes-women .image{
+    width:150px;
+    height:150px;
+    margin:auto;
+ }
+ .clothes-women img{
+    width: 100%;
+    height:100%;
+ }
+ .clothes-women .box button{
+    width:100px;
+    border-radius:20px;
+    background-color: var(--gray);
+    outline: none;
+    padding:5px 0px;
+    margin:auto;
+    border-color: transparent;
+ }
+ .clothes-women a{
+    display: inline-block;
+    margin-top:10px;
+    padding:5px 0px;
+    min-width: 100%;
+    background-color:var(--gray);
+ }
+ @media(max-width:767px){
+    .clothes-women .box{
+        margin-bottom: 10px;
+        width:100%;
+    }
+ }
+ @media(min-width:768px) and (max-width:991px){
+    .clothes-women .box{
+        width:45%;
+    }
+}
+/*********** start clothes *****/
+/********* sports clothes ******/
+.sports-clothes .header{
+    text-align: center;
+}
+.sports-clothes .box {
+    width:calc(90% / 4);
+    margin:10px;
+    border-radius:5px;
+    box-shadow:1px 2px 2px 3px rgba(128, 128, 128, 0.546);
+    padding-bottom:20px;
+    border-radius: 20px;
+}
+.sports-clothes .details{
+    padding:0px 20px 0px 20px;
+}
+.sports-clothes .details span{
+    color:var(--pink);
+}
+.sports-clothes .image{
+    width:100%;
+}
+.sports-clothes .image img{
+   width:100%;
+   height:300px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius:20px;
+   border-bottom-right-radius:20px;
+}
+@media(max-width:767px){
+    .sports-clothes .box{
+        margin-bottom: 10px;
+        width:100%;
+    }
+ }
+ @media(min-width:768px) and (max-width:991px){
+    .sports-clothes .box{
+        width:45%;
+    }
+}
+/********* sports clothes ******/
+/************* banner **************/
+
+
+img{
+    width: 100%;
+    display: block;
+}
+.navbar img{
+    width: 34px;
+    opacity: 0.85;
+}
+.banner-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.6rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    min-height: 100vh;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar-brand span{
+    margin-left: 0.4rem;
+    color: #222;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+}
+.nav-icons a:last-child{
+    margin-left: 1rem;
+    display: block;
+    color: #222;
+}
+.banner-content{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+}
+.banner-left h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.banner-left span{
+    display: block;
+    font-size: 4.4rem;
+}
+.banner-left p{
+    margin: 1.6rem 0;
+    line-height: 1.7;
+}
+.banner-left button{
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.65rem 2rem;
+    border: 3px solid #222;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.banner-left button:hover{
+    background: #fff;
+    color: #222;
+    border-color: #222;
+}
+.banner-left button:focus{
+    outline: 0;
+}
+.color-content{
+    margin-top: 3.2rem;
+}
+.color-content h3{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.color{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.color-black{
+    background-color: #242424;
+}
+.color-blue{
+    background-color: #085ea0;
+}
+.color-yellow{
+    background-color: #c0b50d;
+}
+.color-red{
+    background-color: #8b0516;
+}
+.color-white{
+    background-color: #ededed;
+}
+.color:hover{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+.active-color{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+.color-groups{
+    padding: 1rem 0;
+    display: flex;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px){
+    .navbar{
+        padding-bottom: 3rem;
+    }
+    .banner-content{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .banner-left h2{
+        font-size: 2rem;
+    }
+    .banner-left span{
+        font-size: 2.8rem;
+    }
+    .color-groups{
+        display: flex;
+        justify-content: center;
+    }
+    .color:last-child{
+        margin-right: 0;
+    }
+}
+
+/************* banner **************/
+/************* start footer ***********/
+footer{
+    margin-top:100px;
+    padding:50px 0px;
+    background-color:var(--gray-dark);
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+footer .box{
+    width:calc(90% / 3);
+    line-height: 1.5;
+    color:var(--secondary)
+}
+footer .box h3{
+    text-align: center;
+    color:pink;
+}
+footer .box1{
+    text-align: center;
+}
+footer .box1 span{
+    color:pink;
+}
+footer .box:nth-child(2) input{
+  width:100%;
+  padding:10px;
+  margin:10px 0px;
+  border-radius: 5px;
+  outline:none;
+}
+footer .container + p{
+    text-align: center;
+    color:#6c757d;
+}
+footer span{
+    color:pink;
+    letter-spacing:2px;
+}
+/************* end  footer ***********/

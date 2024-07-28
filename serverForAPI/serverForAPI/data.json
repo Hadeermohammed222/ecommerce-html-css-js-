@@ -1,0 +1,115 @@
+{
+    "products":[{
+        "id":"1",
+        "title":"woman's fashion",
+        "img":"images/home-woman1.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"55"
+    },
+    {
+        "id":"2",
+        "title":"woman's fashion",
+        "img":"images/home-woman4.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"400"
+    },
+    {
+        "id":"3",
+        "title":"woman's fashion",
+        "img":"images/home-woman2.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"600"
+    },
+    {
+        "id":"4",
+        "title":"woman's fashion",
+        "img":"images/home-woman3.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"500"
+    },
+    {
+        "id":"5",
+        "title":"man's fashion",
+        "img":"images/home-man1.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"700"
+    },
+    {
+        "id":"6",
+        "title":"man's fashion",
+        "img":"images/home-man2.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"60"
+    },
+    {
+        "id":"7",
+        "title":"man's fashion",
+        "img":"images/home-man3.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"900"
+    },
+    {
+        "id":"8",
+        "title":"man's fashion",
+        "img":"images/home-man4.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"500"
+    },
+    {
+        "id":"9",
+        "title":"children's fashion",
+        "img":"images/home-children1.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"800"
+    },
+    {
+        "id":"10",
+        "title":"children's fashion",
+        "img":"images/home-children2.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"90"
+    },
+    {
+        "id":"11",
+        "title":"children's fashion",
+        "img":"images/home-children3.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"900"
+    },
+    {
+        "id":"12",
+        "title":"children's fashion",
+        "img":"images/home-children4.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"700"
+    },
+    {
+        "id":"13",
+        "title":"glass and blogs",
+        "img":"images/home-bag1.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"90"
+    },
+    {
+        "id":"14",
+        "title":"glass and blogs",
+        "img":"images/home-glasses1.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"900"
+    },
+    {
+        "id":"15",
+        "title":"glass and blogs",
+        "img":"images/home-bag2.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"600"
+    },
+    {
+        "id":"16",
+        "title":"glass and blogs",
+        "img":"images/home-glass2.jpeg",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ullam.",
+        "price":"500"
+    }
+] 
+}
