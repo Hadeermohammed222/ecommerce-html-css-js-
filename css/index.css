@@ -78,7 +78,7 @@ section{
    right:0%;
    bottom:0%;
    width:100%;
-   background-color:rgba(0,0,0,0.5)
+   background-color:rgba(0, 0, 0, 0.32)
 }
 .overlap .container{
     position:relative;
@@ -109,10 +109,9 @@ section{
 .home .fa-arrow-right{
     right:0%;
 }
-
 header{
     padding:10px;
-    background-color:rgba(0, 0, 0, 0.935);
+    background-color:rgba(0, 0, 0, 0.895);
     position:fixed;
     top:0%;
     width:100%;
@@ -179,16 +178,23 @@ header button .fa-arrow-right-from-bracket{
 .btn{
     display: none;
 }
+
 @media(max-width:767px){
     nav{
         position: absolute;
         top:100%;
         flex-direction: column;
         background-color:rgba(0, 0, 0, 0.694);
-        width:100%;
+        min-width:100%;
         left:0%;
         right:0%;
         padding:20px;
+    }
+    .navbar{
+        display: none;
+    }
+    nav ul li{
+        margin-bottom:10px;
     }
     .btn{
         display:block;
@@ -204,6 +210,7 @@ header button .fa-arrow-right-from-bracket{
         margin-bottom: 5px;
     }
 }
+
 /******** start header *********/
 /************** start random-product ******/
 .random-product h3{
@@ -380,7 +387,15 @@ header button .fa-arrow-right-from-bracket{
     background-color: var(--pink);
     color:white;
 }
-
+@media (max-width:767px) {
+    .contact-us form{
+        flex-direction: column;
+    }
+    .contact-us .left,
+    .contact-us .right{
+    width:100%;
+}
+}
 /************ end form ****************/
 /************* start footer ***********/
 footer{
@@ -422,6 +437,15 @@ footer .container + p{
 footer span{
     color:pink;
     letter-spacing:2px;
+}
+@media (max-width:767px) {
+    footer .container{
+        flex-direction: column;
+    }
+    footer .box{
+        margin-top:30px;
+        width:100%;
+    }
 }
 /************* end  footer ***********/
 .loading{

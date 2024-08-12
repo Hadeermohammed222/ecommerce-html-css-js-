@@ -68,10 +68,11 @@ section{
 .home{
     position:relative;
     height:100vh;
-    background-image:url('../images/services2.jpeg');
+    background-image:url('../images/home-pic3.jpeg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:50% 50%;
+    min-width: 100%;
 }
 .home .overlap{
     color:white;
@@ -81,8 +82,7 @@ section{
    right:0%;
    bottom:0%;
    width:100%;
-   background-color:rgba(0,0,0,0.5);
-   
+   background-color:rgba(0,0,0,0.5)
 }
 .overlap .container{
     position:relative;
@@ -113,16 +113,16 @@ section{
 .home .fa-arrow-right{
     right:0%;
 }
-
 header{
     padding:10px;
-    background-color:rgba(0, 0, 0, 0.641);
+    background-color:rgba(0, 0, 0, 0.962);
     position:fixed;
     top:0%;
-    width:100%;
-    z-index: 1000000;
+    min-width:100%;
+    z-index: 100000;
 }
 header .container{
+    position: relative;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -174,16 +174,32 @@ header button{
 header button .fa-arrow-right-from-bracket{
     color:black
 }
+.btns div{
+    width:50px;
+    height: 2px;
+    background-color:white;
+    margin-bottom:10px;
+}
+.btns{
+    display: none;
+}
+
 @media(max-width:767px){
     nav{
         position: absolute;
         top:100%;
         flex-direction: column;
         background-color:rgba(0, 0, 0, 0.694);
-        width:100%;
+        min-width:100%;
         left:0%;
         right:0%;
         padding:20px;
+    }
+    .navbar{
+        display: none;
+    }
+    nav ul li{
+        margin-bottom:10px;
     }
     .btn{
         display:block;
@@ -198,21 +214,8 @@ header button .fa-arrow-right-from-bracket{
     nav a{
         margin-bottom: 5px;
     }
-    nav{
-        position: absolute;
-        top:100%;
-        flex-direction: column;
-    }
-    .btn{
-        display:block;
-    }
-    .logo-left button{
-        display: none;
-    }
-    nav ul{
-        display: block;
-    }
 }
+/******** start header *********/
 /************** start header *********/
 /***********start services ************/
 .services .head{
@@ -292,6 +295,8 @@ header button .fa-arrow-right-from-bracket{
 /************* start footer ***********/
 footer{
     margin-top:100px;
+    padding:50px 0px;
+    background-color:var(--gray-dark);
 }
 footer .container{
     display: flex;
@@ -328,4 +333,12 @@ footer span{
     color:pink;
     letter-spacing:2px;
 }
-/************ end  footer **********/
+@media (max-width:767px) {
+    footer .container{
+        flex-direction: column;
+    }
+    footer .box{
+        margin-top:30px;
+        width:100%;
+    }
+}

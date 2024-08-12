@@ -1,6 +1,14 @@
+////////////////// custome nav /////////////////
+let navBtn = document.querySelector("header .btn");
+let nav = document.querySelector("header nav");
+
+navBtn.addEventListener('click',()=>{
+  nav.classList.toggle("navbar");
+})
+
+//////////////// slider  ///////////////////////
 let btnNext = document.querySelector(".home .container .fa-arrow-left");
 let btnPrev = document.querySelector(".home .container .fa-arrow-right");
-
 let home = document.querySelector(".home");
 
 let imageOfSlider = 
@@ -44,7 +52,8 @@ var cart = [];
 var filterGroup = document.querySelector(".filter-group");
 var arr = [];
 let btn_product = document.querySelectorAll('.products-btn a');
-
+let overlapCart = document.querySelector(".overlap-cart");
+//////////////// Product Fetching and Display /////
 window.addEventListener('load',async()=>{
   await getProducts();
     
@@ -57,8 +66,10 @@ btn_product.forEach(element => {
     element.addEventListener('click', () => {
         arr = product.filter(pro => element.innerHTML === pro.title);
         showData(arr);
+       
     });
 });
+
 // Function to show data in filter group.
 function showData(dataSales) {
     filterGroup.innerHTML = ' ';
@@ -81,6 +92,7 @@ function showData(dataSales) {
     document.querySelectorAll('.add-to-cart-btn').forEach(button => {
       button.addEventListener('click', addToCart);
     })
+  }
 //Add product to cart
 function addToCart(event) {
 
@@ -100,11 +112,21 @@ function addToCart(event) {
 
   // Add the new product to the cart
   cart.push(obj);
-
+  
   // Save the updated cart back to local storage
   localStorage.setItem('cart', JSON.stringify(cart));
-
+  
+  updateCartCount();
+  
   }
+// Function to update the cart count
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  overlapCart.innerHTML = cart.length;
 }
 
+// Call this function when the page loads
+window.addEventListener('load', () => {
+  updateCartCount();
+});
 
