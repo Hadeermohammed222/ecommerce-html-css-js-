@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mackup.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="fontawesom/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Elsie+Swash+Caps:wght@900&family=Lobster+Two&family=Noto+Sans+JP&family=Sevillana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -15,53 +14,83 @@
     
 </head>
 <body>
-  
-    <!-- start home -->
-        <div class="home">
-            <div class="overlap">
-                <div class="container">
-                    <div class="content">
-                        <h3 class="text">the best <span>sales</span></h3>
+                <!--start of seting box-->
+                <div class="setting-box">
+                    <div class="toggle">
+                    <i class="fas fa-cog"></i>
                     </div>
-                    <div class="arrow-icon">
-                        <i class="fa-solid fa-arrow-left arrow"></i>
-                        <i class="fa-solid fa-arrow-right arrow"></i>
-                    </div> 
-                </div>
-            </div>
-            <!-- start of header -->
-            <header>
-                <div class="container">
-                    <div class="logo">
-                        <img src="images/logo.jpeg"/>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="clothes.html">Clothes</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                        </ul>
-                    </nav>
-                    <div class="logo-left">
-                      <!-- <a href="cart.html">
-                        <i class="fa-solid fa-cart-shopping" id="cart">
-                          <div class="overlap-cart"></div>
-                        </i>
-                      </a>   -->
-                        <button>Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-                    </div>
-                    <div class="btn">
-                      <div></div>
-                      <div></div>
-                      <div></div>
+                    <div class="setting-container">
+                    <div class="option-box">
+                            <h4>colors</h4>
+                            <ul>
+                                <li class="active" data-color="tomato"></li>
+                                <li data-color="aqua"></li>
+                                <li data-color="yellow"></li>
+                                <li data-color="crimson"></li>
+                                <li data-color="blue"></li>
+                            </ul>
+                        </div>
+                        <div class="option-box">
+                            <h4>Random backgrounds</h4>
+                            <div class="random-background">
+                            <span class="yes active" data-background="yes">Yes</span>
+                            <span class="no" data-background="no">No</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </header>
-            <!-- end of header -->
+                <!--end of seting box-->
+         <!--start of landing page-->
+         <section class="landing">
+             <div class="overlay"></div>
+             <div class="header">
+                 <div class="logo"><img src="images/logo.jpeg"></div>
+                 <div class="links-container">
+                 <ul class="myul">
+                     <div class="links Open">
+                        <li><a href="home.html" class="active" data-section=".aboutus">Home</a></li>
+                        <li></i><a href="woman.html">Clothes <i style="color: white;" class="far fa-caret-square-down"></i></a>
+                            <div class="drobdown">
+                            <ul>
+                        <li><a href="woman.html">Women</a></li>
+                        <li><a href="man.html">Men</a></li>
+                        <li><a href="children.html">children</a></li>
+                       </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Categories</a><i style="color: white;margin-left: -20px;" class="far fa-caret-square-down"></i>
+                            <div class="drobdown">
+                            <ul>
+                        <li><a href="Access.html">Accessories</a></li>
+                        <li><a href="mackUp.html">Mackup</a></li>
+                        <li><a  href="glass.html">Glass</a></li>
+               </ul>
+                    </div>
+                   
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">Aboutus</a></li>
+                <li><a href="contact.html">ContactUs</a></li> 
+               <!-- <li class="ser"><i class="fas fa-search-location"></i></li>-->
+                     </div>
+                    </ul>
+                     <i class="fas fa-shopping-cart"></i>
+                     <button class="logout"><a href="login.html">Log out<i class="fas fa-sign-out-alt"></i></a></button>
+                    <button class="toogle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                     </div>
+             </div>
+             <div style="z-index: 1;" class="intro">
+                 
+                 <h1>THE BEST <span>Sale </span></h1>
+                 <p>SPECIAL FOR TODAY</p>
+             </div>
+         </section>
+         <!--end of landing page-->
 
-        </div>
-     <!-- end home -->    
 <!-- ***************srart of tarn********************* -->
 <section class="tran container margin mb-5 ">
     <div class="top h1-div mb-3">

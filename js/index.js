@@ -59,7 +59,7 @@ window.addEventListener('load',async()=>{
     
 })
 async function getProducts() {
-    product = await fetch('http://localhost:3005/products');
+    product = await fetch('https://ecommerce-html-css-js-kohl.vercel.app/products');
     product = await product.json();
 }
 btn_product.forEach(element => {

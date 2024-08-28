@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 body{
     overflow-x: hidden;
@@ -62,206 +63,261 @@ a{
 /*********** global ele ********/
 section{
     padding:80px 0px;
+    overflow-x:hidden;
 }
 /*********** global ele ********/
 /******** start header *********/
-.home{
-    position:relative;
-    height:100vh;
-    background-image:url('../images/Backlog.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:50% 50%;
+/* General Styles */
+.home {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/Backlog.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     min-width: 100%;
-}
-.home .overlap{
-    color:white;
-   position:absolute;
-   top:0%;
-   left:0%;
-   right:0%;
-   bottom:0%;
-   width:100%;
-   background-color:rgba(0,0,0,0.5)
-}
-.overlap .container{
-    position:relative;
-    height:100vh;
-}
-.home .overlap h3{
-    font-size:35px;
-}
-.home .content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-.home span{
-    color:var(--pink);
-}
-.home .fa-arrow-left,
-.home .fa-arrow-right{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:30px;
-}
-.home .fa-arrow-left{
-    left:0%;
-}
-.home .fa-arrow-right{
-    right:0%;
-}
-header{
-    padding:10px;
-    background-color:rgba(0, 0, 0, 0.962);
-    position:fixed;
-    top:0%;
-    min-width:100%;
-    z-index: 100000;
-}
-header .container{
-    position: relative;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-header .logo img{
-    display:block;
-    width:80px;
-    height:80px;
-    border-radius:50%;
-}
-header ul {
-    display:flex;
-}
-header ul a{
-    display:inline-block;
-    margin-right:20px;
-}
-header .fa-cart-shopping{
-    color:white;
-    font-size:30px;
-    margin-right:10px;
-}
-.logo-left{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.logo-left #cart{
-    position: relative;
-}
-.logo-left .overlap-cart{
+  }
+  
+  .home .overlap {
+    color: white;
     position: absolute;
-    width:20px;
-    height:20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlap .container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .home .overlap h3 {
+    font-size: 35px;
+  }
+  
+  .home .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .home span {
+    color: var(--pink);
+  }
+  
+  .home .fa-arrow-left,
+  .home .fa-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+  }
+  
+  .home .fa-arrow-left {
+    left: 0;
+  }
+  
+  .home .fa-arrow-right {
+    right: 0;
+  }
+  
+  header {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.962);
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    z-index: 100000;
+  }
+  
+  header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header ul a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header .fa-cart-shopping {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-left #cart {
+    position: relative;
+  }
+  
+  .logo-left .overlap-cart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     text-align: center;
-    top:-50%;
-    right:-10%;
-    color:white;
+    top: -50%;
+    right: -10%;
+    color: white;
     z-index: 3;
-    font-size:10px;
+    font-size: 10px;
     line-height: 20px;
     background-color: #e83e8c;
-}
-
-header button{
-    padding:10px;
-}
-header button .fa-arrow-right-from-bracket{
-    color:black
-}
-.btns div{
-    width:50px;
+  }
+  
+  header button {
+    padding: 10px;
+  }
+  
+  header button .fa-arrow-right-from-bracket {
+    color: black;
+  }
+  
+  .btns div {
+    width: 50px;
     height: 2px;
-    background-color:white;
-    margin-bottom:10px;
-}
-.btns{
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  
+  .btns {
     display: none;
-}
-
-@media(max-width:767px){
-    nav{
-        position: absolute;
-        top:100%;
-        flex-direction: column;
-        background-color:rgba(0, 0, 0, 0.694);
-        min-width:100%;
-        left:0%;
-        right:0%;
-        padding:20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    nav {
+      position: absolute;
+      top: 100%;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.694);
+      min-width: 100%;
+      left: 0;
+      right: 0;
+      padding: 20px;
     }
-    .navbar{
-        display: none;
+  
+    .navbar {
+      display: none;
     }
-    nav ul li{
-        margin-bottom:10px;
+  
+    nav ul li {
+      margin-bottom: 10px;
     }
-    .btn{
-        display:block;
+  
+    .btn {
+      display: block;
     }
-    .logo-left button{
-        display: none;
+  
+    .logo-left button {
+      display: none;
     }
-    nav ul{
-        display: block;
-        
+  
+    nav ul {
+      display: block;
     }
-    nav a{
-        margin-bottom: 5px;
+  
+    nav a {
+      margin-bottom: 5px;
     }
-}
-/******** start header *********/
-/*********** start clothes *****/
-.clothes-women .box
-{
+  
+    .home .content {
+      text-align: center;
+    }
+  
+    .home .fa-arrow-left,
+    .home .fa-arrow-right {
+      font-size: 24px;
+    }
+  
+    .home .overlap h3 {
+      font-size: 28px;
+    }
+  }
+  
+  /* Clothes Section Styles */
+  .clothes-women .box {
     border-radius: 10px;
     text-align: center;
-    margin:10px;
-    box-shadow:1px 2px 2px 3px rgba(128, 128, 128, 0.546);
-    width:calc(90% /5);
-    padding:20px 20px 0px 20px;
- }
- .clothes-women .image{
-    width:150px;
-    height:150px;
-    margin:auto;
- }
- .clothes-women img{
+    margin: 10px;
+    box-shadow: 1px 2px 2px 3px rgba(128, 128, 128, 0.546);
+    width: calc(99% / 5);
+    padding: 20px 20px 10px 20px;
+  }
+  
+  .clothes-women .image {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+  
+  .clothes-women img {
     width: 100%;
-    height:100%;
- }
- .clothes-women .box button{
-    width:100px;
-    border-radius:20px;
+    height: 100%;
+  }
+  
+  .clothes-women .box button {
+    width: 100px;
+    border-radius: 20px;
     background-color: var(--gray);
     outline: none;
-    padding:5px 0px;
-    margin:auto;
+    padding: 5px 0;
+    margin: auto;
+    color: white;
     border-color: transparent;
- }
- .clothes-women a{
+  }
+  
+  .clothes-women a {
     display: inline-block;
-    margin-top:10px;
-    padding:5px 0px;
+    margin-top: 10px;
+    padding: 5px 0;
     min-width: 100%;
-    background-color:var(--gray);
- }
- @media(max-width:767px){
-    .clothes-women .box{
-        margin-bottom: 10px;
-        width:100%;
+    background-color: var(--gray);
+  }
+  
+  @media (max-width: 767px) {
+    .clothes-women .box {
+      margin-bottom: 10px;
+      width: 100%;
     }
- }
- @media(min-width:768px) and (max-width:991px){
-    .clothes-women .box{
-        width:45%;
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .clothes-women .box {
+      width: 45%;
     }
-}
+  }
+  
+  /* Additional Styles */
+  @media (min-width: 992px) {
+    .clothes-women .box {
+      width: calc(90% / 4);
+    }
+  }
+  
 /*********** start clothes *****/
 /********* sports clothes ******/
 .sports-clothes .header{
@@ -471,54 +527,66 @@ img{
 
 /************* banner **************/
 /************* start footer ***********/
-/************* start footer ***********/
-footer{
-    margin-top:100px;
-    padding:50px 0px;
-    background-color:var(--gray-dark);
+/*****************  start of footer  ******************/
+span{
+    color: rgb(241, 120, 181);
 }
-footer .container{
+footer h1{
+   color: rgb(241, 120, 181);
+   text-shadow: rgb(8, 8, 8) 1px 1px 3px;
+   font-family: 'lobster';
+}
+footer input{
+    outline: none;
+    border: none;
+}
+.icon ul li{
+    position: relative;
+    display: block;
+    list-style: none;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(241, 120, 181);
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    transition: .5s;
+    box-shadow: 0 0 15px  #171515;
+    text-shadow: 0 0 5px  #171515;
+}
+.icon ul{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-footer .box{
-    width:calc(90% / 3);
-    line-height: 1.5;
-    color:var(--secondary)
-}
-footer .box h3{
-    text-align: center;
-    color:pink;
-}
-footer .box1{
+    align-items: center;
     text-align: center;
 }
-footer .box1 span{
-    color:pink;
+.icon ul li:hover{
+    font-size: 30px;
+    box-shadow: 0 0 15px rgb(241, 120, 181);
+    text-shadow: 0 0 15px rgb(241, 120, 181);
+    background-color: #171515;
 }
-footer .box:nth-child(2) input{
-  width:100%;
-  padding:10px;
-  margin:10px 0px;
-  border-radius: 5px;
-  outline:none;
-}
-footer .container + p{
-    text-align: center;
-    color:#6c757d;
-}
-footer span{
-    color:pink;
-    letter-spacing:2px;
-}
-@media (max-width:767px) {
-    footer .container{
-        flex-direction: column;
+@media(max-width:1200px){
+    .icon ul{
+        margin-left:300px ;
     }
-    footer .box{
-        margin-top:30px;
-        width:100%;
+    .last{
+        margin-top: 50px;
     }
 }
-/************* end  footer ***********/
+@media(max-width:992px){
+    .icon ul{
+        margin-left:180px ;
+    }
+}
+@media(max-width:768px){
+    .icon ul{
+        margin-left:90px ;
+    }
+}
+@media(max-width:576px){
+    .icon ul{
+        margin-left:30px ;
+    }
+}
+/*.............................end of footer....................*/
